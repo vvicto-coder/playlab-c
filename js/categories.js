@@ -1,4 +1,4 @@
-/* A안 모바일 '모든 카테고리' — 카테고리 버튼을 누르면 화면 전체가 이 목록으로 넘어간다. 교육용 비영리 테스트 페이지 */
+/* C안 모바일 '모든 카테고리' — 카테고리 버튼을 누르면 화면 전체가 이 목록으로 넘어간다. 교육용 비영리 테스트 페이지 */
 (function () {
   App.mountShell();
   const root = document.getElementById("app"), L = App.Logger;

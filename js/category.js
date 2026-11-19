@@ -1,4 +1,4 @@
-/* A안 카테고리 목록 — 상단 '카테고리' 패널에서 진입(category.html?c=○○). 교육용 비영리 테스트 페이지
+/* C안 카테고리 목록 — 상단 '카테고리' 패널에서 진입(category.html?c=○○). 교육용 비영리 테스트 페이지
    작품 데이터에 '제작 국가' 정보가 없어, 국가·연령대형 카테고리(한국/미국/일본…·20대·영문 자막)는
    교육용 가상 분류(작품 id 기반 고정 규칙)로 나눈다 — 실제 국적과 무관하다. */
 (async function () {
@@ -35,7 +35,7 @@
   const rule = RULE[name] || ((c) => c.genres.includes(name));
   const list = C.filter(rule).sort((a, b) => b.rating - a.rating);
   const card = (c) => `<a class="card" href="detail.html?id=${c.id}" data-id="${c.id}"><div class="thumb" style="--h:${App.hue(c.id)}">${c.image ? `<img src="${esc(c.image)}" alt="" loading="lazy" onerror="this.remove()">` : ""}${App.tagHTML(c)}<div class="ctitle">${esc(c.title)}</div>${c.access === "paid" && c.price ? `<div class="cap">${c.price.toLocaleString("ko-KR")}원</div>` : ""}</div></a>`;
-  document.title = `${name || "카테고리"} · PLAYLAB A안`;
+  document.title = `${name || "카테고리"} · PLAYLAB C안`;
   root.innerHTML = `<div class="cat-top"><button class="ac-back" aria-label="뒤로">←</button><h2>${esc(name || "카테고리")}</h2><span><button data-m="cast" aria-label="화면 전송">⎘</button><button data-m="filter" aria-label="필터">☰</button></span></div>
     <div class="s-res"><h1>${esc(name || "카테고리")} <small class="cat-n">${list.length}개</small></h1>
     ${list.length ? `<div class="s-grid wide">${list.map(card).join("")}</div>` : '<p class="soon big">아직 준비된 작품이 없어요. 다른 카테고리를 선택해 보세요.</p>'}</div>`;

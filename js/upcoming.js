@@ -1,4 +1,4 @@
-/* A안 공개 예정 — 곧 공개되는 작품 카드(알림 받기·공유하기·예약 구매). 일정·작품은 모두 가상. 교육용 비영리 테스트 페이지 */
+/* C안 공개 예정 — 곧 공개되는 작품 카드(알림 받기·공유하기·예약 구매). 일정·작품은 모두 가상. 교육용 비영리 테스트 페이지 */
 (async function () {
   App.mountShell();
   const L = App.Logger, esc = App.esc, root = document.getElementById("app");

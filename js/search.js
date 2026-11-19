@@ -1,4 +1,4 @@
-/* A안 검색 — 전용 페이지(검색 홈 → 결과). 제목·장르로 검색. 교육용 비영리 테스트 페이지 */
+/* C안 검색 — 전용 페이지(검색 홈 → 결과). 제목·장르로 검색. 교육용 비영리 테스트 페이지 */
 (async function () {
   App.mountShell();
   const root = document.getElementById("app");
@@ -89,6 +89,6 @@
   }
 
   L.log("search_open", { section: "search" });
-  document.title = q ? `"${q}" 검색 · PLAYLAB A안` : "검색 · PLAYLAB A안";
+  document.title = q ? `"${q}" 검색 · PLAYLAB C안` : "검색 · PLAYLAB C안";
   q ? results() : landing();
 })();
